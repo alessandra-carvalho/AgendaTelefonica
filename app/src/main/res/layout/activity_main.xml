@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:onClick="fechar_tela"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -15,7 +16,7 @@
             android:id="@+id/tv_titulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Agenda Ale"
+            android:text="Appointment"
             android:textAlignment="center"
             android:textSize="34sp"
             android:textStyle="italic" />
@@ -29,7 +30,7 @@
                 android:id="@+id/tv_nome"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nome:" />
+                android:text="Name:" />
 
             <EditText
                 android:id="@+id/et_nome"
@@ -49,7 +50,7 @@
                 android:id="@+id/tv_telefone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Telefone:" />
+                android:text=" Telephone:" />
 
             <EditText
                 android:id="@+id/et_telefone"
@@ -69,7 +70,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Gravar" />
+                android:onClick="inserirRegistro"
+                android:text="Register" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -81,7 +83,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Consultar" />
+                android:onClick="abrir_tela_consulta"
+                android:text="Consult" />
 
         </LinearLayout>
 
@@ -89,7 +92,8 @@
             android:id="@+id/btn_fechar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Fechar" />
+            android:onClick="fechar_tela"
+            android:text="Close" />
 
     </LinearLayout>
 

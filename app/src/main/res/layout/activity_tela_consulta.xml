@@ -11,6 +11,14 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:textAlignment="center"
+            android:textSize="34sp" />
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,15 +28,14 @@
                 android:id="@+id/tv_nome_consulta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="Name:" />
 
             <EditText
                 android:id="@+id/et_nome_consulta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -40,15 +47,14 @@
                 android:id="@+id/tv_telefone_consulta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text=" Telephone:" />
 
             <EditText
                 android:id="@+id/et_telefone_consulta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
-                android:inputType="textPersonName"
-                android:text="Name" />
+                android:inputType="textPersonName" />
         </LinearLayout>
 
         <LinearLayout
@@ -61,7 +67,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Anterior" />
+                android:onClick="registroAnterior"
+                android:text=" previous" />
 
             <Space
                 android:layout_width="wrap_content"
@@ -73,7 +80,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Próximo" />
+                android:onClick="proximoRegistro"
+                android:text="next" />
         </LinearLayout>
 
         <LinearLayout
@@ -85,7 +93,8 @@
                 android:id="@+id/btn_voltar_consulta"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Voltar" />
+                android:onClick="fechar_tela"
+                android:text=" come back" />
         </LinearLayout>
     </LinearLayout>
 
