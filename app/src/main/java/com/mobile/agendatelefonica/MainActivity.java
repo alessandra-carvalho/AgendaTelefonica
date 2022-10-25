@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         DB.abrirOuCriarTabela(this); //chama o abrir ou criar tabela
         DB.fecharDB();
     }
+
     //inserção dos dados
     public void inserirRegistro(View v){
         String st_nome, st_fone;

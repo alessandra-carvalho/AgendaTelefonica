@@ -26,7 +26,7 @@ public class TelaConsulta extends AppCompatActivity {
 
         //relação c/ os botões da activity_tela_consulta
         et_nome = (EditText) findViewById(R.id.et_nome_consulta);
-        et_telefone = (EditText) findViewById(R.id.et_telefone);
+        et_telefone = (EditText) findViewById(R.id.et_telefone_consulta);
         btn_anterior = (Button) findViewById(R.id.btn_anterior);
         btn_proximo = (Button) findViewById(R.id.btn_proximo);
         btn_voltar = (Button) findViewById(R.id.btn_voltar_consulta);
@@ -53,6 +53,7 @@ public class TelaConsulta extends AppCompatActivity {
     public void fecharDB(){
         db.close();
     }
+
     //para navegar p/ prox tela
     public void proximoRegistro(View v){
             try{
@@ -66,6 +67,7 @@ public class TelaConsulta extends AppCompatActivity {
                 }
             }
     }
+
     //para tela anterior/voltar
     public void registroAnterior(View v){
         try{
@@ -79,15 +81,14 @@ public class TelaConsulta extends AppCompatActivity {
             }
         }
     }
+
     //função que mostra os dados na tela
     @SuppressLint("Range")
     public void mostrarDados(){
         et_nome.setText(cursor.getString(cursor.getColumnIndex("nome")));
         et_telefone.setText(cursor.getString(cursor.getColumnIndex("fone")));
     }
-        //outra tentativa de mostrar os dados cadastrados na tela que não estão funcionando
-//    public void mostrarDados(){
-//        et_nome.setText(cursor.getString(1));
-//        et_telefone.setText(cursor.getString(2));
-//    }
 }
+
+
+
